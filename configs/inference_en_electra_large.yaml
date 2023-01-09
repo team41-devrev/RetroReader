@@ -24,12 +24,12 @@ RetroDataModelArguments:
     
     # SketchModelArguments
     sketch_revision: en-electra-large-sketch
-    sketch_model_name: jinmang2/retro-reader
+    sketch_model_name: ./../checkpoints
     sketch_architectures: ElectraForSequenceClassification
     
     # IntensiveModelArguments
     intensive_revision: en-electra-largs-intensive
-    intensive_model_name: jinmang2/retro-reader
+    intensive_model_name: ./../checkpoints
     intensive_architectures: ElectraForQuestionAnsweringAVPool
     
 

@@ -108,13 +108,16 @@ def main():
     DDD = DatasetDict()
 
     DDD['test'] = Dataset.from_pandas(df1)
-    outputs = retro_reader.inference(DDD['test'])
+    outputs = retro_reader(
+        query=query,
+    context=context,
+    return_submodule_outputs=return_submodule_outputs)
+    '''.inference(DDD['test'])
     #answer, score = outputs[0]["id-01"], outputs[1]
     print("***************")
     print(outputs)
-    print("**************")
-
-    np.save("o1_zero_shot.npy",outputs)
+    print("**************")'''
+    print(outputs)
 
     
 if __name__ == "__main__":
